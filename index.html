@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HeroLines</title>
+  <script type="text/javascript" src="../vendor/physics/physics.min.js"></script>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=5.0">
+  <style>
+    .Header-bg {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas class="Header-bg" id="hero" data-hero-lines></canvas>
+
+  <script type="module">
+
+    import HeroLines from "./hero-lines/index.js";
+
+    var heroLine = new HeroLines();
+    heroLine.init();
+
+  </script>
+
+</body>
+
+</html>
